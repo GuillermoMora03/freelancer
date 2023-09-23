@@ -211,6 +211,9 @@ h1,h2,h3{
     align-items: center;
 }
 
+.img-MV{
+    width: 45%;
+}
 
 /**Contacto**/
 .formulario{
