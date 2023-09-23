@@ -211,6 +211,11 @@ h1,h2,h3{
     align-items: center;
 }
 
+.servicio-MV .icono-MV{
+    height: 15rem;
+    width: 15rem;
+}
+
 /**Contacto**/
 .formulario{
     background-color: var(--gris);
