@@ -178,7 +178,7 @@ h1,h2,h3{
     .servicios-MV{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 2rem;
+        padding: 5rem;
     }
 }
 
