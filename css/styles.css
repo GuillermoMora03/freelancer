@@ -181,6 +181,10 @@ h1,h2,h3{
     align-items: center;
 }
 
+.parrafo{
+    justify-content: justify;
+}
+
 .servicio h3{
     color: var(--secundario);
     font-weight: normal;
