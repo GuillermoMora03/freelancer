@@ -158,14 +158,6 @@ h1,h2,h3{
     align-items: flex-end;
 }
 
-/*.servicios,
-.navegacion-principal,
-.formulario
-{
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-}*/
-
 /**servicios**/
 @media (min-width: 768px) {
     .servicios{
@@ -273,6 +265,10 @@ h1,h2,h3{
     border: none;
     padding: 1.5rem;
     border-radius: .5rem;
+}
+
+.d1{
+    width: 100%;
 }
 
 /* footer */
