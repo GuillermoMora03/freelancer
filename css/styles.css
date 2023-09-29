@@ -267,6 +267,10 @@ h1,h2,h3{
     border-radius: .5rem;
 }
 
+.dc{
+    width: 80%;
+}
+
 .d1{
     width: 100%;
 }
