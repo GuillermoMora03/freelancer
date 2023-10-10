@@ -309,6 +309,7 @@ header{
     animation-timeline: scroll();
     animation-range: 0 200px;
     background: white;
+    z-index: 9999;
 }
 
 @keyframes adjust-header{
