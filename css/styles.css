@@ -127,7 +127,7 @@ h1,h2,h3{
 
 /* IMAGEN */
 .hero{
-    background-image: url(../image/hero.jpg);
+    background-image: url(../image/emociones.gif);
     background-repeat: no-repeat;
     background-size:100%;
     height: 450px;
@@ -300,5 +300,22 @@ h1,h2,h3{
     .Intro-Metodo{
         display: grid;
         /* grid-template-columns: repeat(2, 1fr); */
+    }
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+    background: white;
+}
+
+@keyframes adjust-header{
+    to{
+        background: #DFE9F3;
+        backdrop-filter: blur(5px);
+        font-size: 12px;
+        height: 24px;
     }
 }
