@@ -338,10 +338,14 @@ img{
     animation-name: show;
     animation-fill-mode: both;
     animation-timeline: --revealing-image;
-
     animation-range: entry 25% cover 50%;
+    width: 100%;
 }
 
 p{
-    font-family: 'Gabarito', sans-serif;    
+    font-family: 'Gabarito', sans-serif;       
+}
+
+.Descripcion_Metodo p{
+    font-size: 30px;
 }
