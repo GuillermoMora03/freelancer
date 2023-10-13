@@ -351,3 +351,17 @@ p{
     font-size: 25px;
     text-align: justify;
 }
+
+.u-list{
+    font-size: 25px;
+    text-align: justify;
+    font-family: 'Gabarito', sans-serif; 
+}
+h4{
+    font-size: 30px;
+    text-align: center;
+}
+.title_PuntoFijo{
+    font-family: 'Gabarito', sans-serif; 
+    font-size: 45px;
+}
