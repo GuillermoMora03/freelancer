@@ -347,6 +347,7 @@ p{
     font-family: 'Gabarito', sans-serif;       
 }
 
-.Descripcion_Metodo p{
-    font-size: 30px;
+.Descripcion_Metodo {
+    font-size: 25px;
+    text-align: justify;
 }
