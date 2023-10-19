@@ -5,7 +5,8 @@
     --secundario: #fffffe;
     --gris:#757575;
     --Morado-obscuro: #232946cb;
-    --paragraph: #b8c1ec;
+    --stroke: #121629;
+    --paragraph: #b8c1ec;    
 }
 
 /* GLOBALES */
@@ -22,7 +23,8 @@ html{
 body{
     font-size: 16px; /* 1 rem = 10px*/
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, var(--Morado-obscuro) 0%, var(--Morado) 100%);
+    background-image: linear-gradient(to top, var(--stroke) 30%, var(--Morado) 100%);
+    /* background: var(--Morado); */
 }
 .contenedor{
     max-width: 120rem;
@@ -102,7 +104,7 @@ h1,h2,h3{
 
 /* NAVEGACION PRINCIPAL */
 .nav-bg{
-    background-color: var(--secundario);
+    background-color: var(--secundario);     
 }
 
 .navegacion-principal{
@@ -118,7 +120,7 @@ h1,h2,h3{
 }
 
 .navegacion-principal a{
-    color: var(--Morado);
+    color: var(--Morado);     
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
