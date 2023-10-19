@@ -9,6 +9,7 @@
 
 /* GLOBALES */
 html{
+    background-color: #232946;
     font-size: 62.5%;
     box-sizing: border-box;
     /*scroll-snap-type: y mandatory ;*/
