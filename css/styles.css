@@ -366,7 +366,7 @@ img{
 
 p{
     font-family: 'Gabarito', sans-serif;   
-    color: var(--paragraph);    
+    color: var(--paragraph)!important;    
 }
 
 .Descripcion_Metodo {
@@ -389,3 +389,9 @@ h4{
     font-family: 'Gabarito', sans-serif; 
     font-size: 45px;
 }
+
+/* Pagina Aplicacione Moviles */
+
+li{
+    color: var(--paragraph);
+   }
