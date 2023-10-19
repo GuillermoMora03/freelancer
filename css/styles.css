@@ -1,8 +1,8 @@
 :root{
     --Morado: #232946;
     --obscuro: #212121;
-    --primario: #ffc107;
-    --secundario: #0097a7;
+    --primario: #eebbc3;
+    --secundario: #fffffe;
     --gris:#757575;
     --Morado-obscuro: #232946cb;
 }
@@ -62,12 +62,15 @@ body{
 
 /* TIPOGRAFIA */
 h1{
+    color: white;
     font-size: 3.8rem;
 }
 h2{
+    color: white;
     font-size: 4rem;
 }
 h3{
+    color: white;
     font-size: 2.5rem;
 }
 
@@ -198,6 +201,7 @@ h1,h2,h3{
 .servicio p{
     line-height: 2;
     text-align: center;
+    color: white;
 }
 
 
