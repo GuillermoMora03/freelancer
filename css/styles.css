@@ -283,7 +283,7 @@ h1,h2,h3{
 }
 
 .dc{
-    width: 80%;
+    width: 80%; 
 }
 
 .d1{
@@ -303,6 +303,21 @@ h1,h2,h3{
 }
 
 /* PAGINA METODOS NUMERICOS */
+.imagen-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767px) {
+    .imagen-responsive {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+
 @media (min-width: 768px) {
     .Intro-Metodo{
         display: grid;
