@@ -4,7 +4,7 @@
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris:#757575;
-    --gris-claro: #DFE9F3;
+    --Morado-obscuro: #232946cb;
 }
 
 /* GLOBALES */
@@ -309,7 +309,7 @@ header{
     top: 0px;
     animation-timeline: scroll();
     animation-range: 0 200px;
-    background: white;
+    background: var(--Morado);
     z-index: 9999;
 }
 
