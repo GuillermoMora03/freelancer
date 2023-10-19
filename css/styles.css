@@ -131,7 +131,7 @@ h1,h2,h3{
 
 /* IMAGEN */
 .hero{
-    background-color: var(--primario);
+    background-color: #f3b1bb;
     background-repeat: no-repeat;
     background-size:100%;
     height: 450px;
