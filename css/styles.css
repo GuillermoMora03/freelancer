@@ -5,6 +5,7 @@
     --secundario: #fffffe;
     --gris:#757575;
     --Morado-obscuro: #232946cb;
+    --paragraph: #b8c1ec;
 }
 
 /* GLOBALES */
@@ -349,7 +350,8 @@ img{
 }
 
 p{
-    font-family: 'Gabarito', sans-serif;       
+    font-family: 'Gabarito', sans-serif;   
+    color: var(--paragraph);    
 }
 
 .Descripcion_Metodo {
@@ -361,10 +363,12 @@ p{
     font-size: 25px;
     text-align: justify;
     font-family: 'Gabarito', sans-serif; 
+    color: var(--paragraph);
 }
 h4{
     font-size: 30px;
     text-align: center;
+    color: var(--secundario);
 }
 .title_PuntoFijo{
     font-family: 'Gabarito', sans-serif; 
