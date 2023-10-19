@@ -133,7 +133,7 @@ h1,h2,h3{
 
 /* IMAGEN */
 .hero{
-    background-image: url(../image/emociones.gif);
+    background-color: #f3b1bb;
     background-repeat: no-repeat;
     background-size:100%;
     height: 450px;
@@ -143,7 +143,6 @@ h1,h2,h3{
 
 .contenido-hero{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.562);/*anterio*/
     width: 100%;
     height: 100%;
     display:flex;
