@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins:wght@400;700&display=swap');
 :root{
     --Morado: #232946;
     --obscuro: #212121;
@@ -6,7 +7,8 @@
     --gris:#757575;
     --Morado-obscuro: #232946cb;
     --stroke: #121629;
-    --paragraph: #b8c1ec;    
+    --paragraph: #b8c1ec;  
+    
 }
 
 /* GLOBALES */
@@ -23,7 +25,7 @@ html{
 
 body{
     font-size: 16px; /* 1 rem = 10px*/
-    font-family: 'Krub', sans-serif;
+    font-family: "Poppins";
     background-image: linear-gradient(to top, var(--stroke) 30%, var(--Morado) 100%);
     /* background: var(--Morado); */
 }
@@ -227,7 +229,7 @@ h1,h2,h3{
 
 /**Contacto**/
 .formulario{
-    background-color: var(--gris);
+    background-color: var(--primario);
     width: min(60rem, 100%);/**utilizar el valor mas pequeño**/
     margin: 0 auto;
     padding: 2rem;
@@ -244,7 +246,7 @@ h1,h2,h3{
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: var(--primario);
+    color: var(--secundario);
 }
 
 @media (min-width: 768px) {
@@ -375,24 +377,24 @@ header{
 }
 
 p{
-    font-family: 'Gabarito', sans-serif!important;   
+    font-family: 'Poppins', sans-serif!important;   
     color: var(--paragraph)!important;  
-    font-size: 25px;
+    font-size: 20px;
     text-align: justify;  
 }
 
-.Descripcion_Metodo {
+/* .Descripcion_Metodo {
     
-}
+} */
 
 .u-list{
-    font-size: 25px;
+    font-size: 20px;
     text-align: justify;
-    font-family: 'Gabarito', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
     color: var(--paragraph);
 }
 h4{
-    font-size: 30px;
+    font-size: 22px;
     text-align: center;
     color: var(--secundario);
 }
