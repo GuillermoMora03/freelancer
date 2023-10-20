@@ -1,196 +1,416 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño Móvil</title>
-    <link rel="preload" href="../css/styles.css" as="style">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preload" href="../css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" 
-    rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="../css/styles.css" as="style" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preload" href="../css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+      rel="stylesheet"
     />
-    <title>Métodos Numéricos</title>
-    <style> 
-        h3, h4, h5, h6 {
-            color: white;
-           font-size: 24px; 
-           text-align: center;
-       }
-       h2 {
-            color: white; 
-       }
-       h3{
-            color: white;
-       }
-       h7{
-            color: white;
-       }
-       h8{
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Diseño Móvil</title>
+    <style>
+      h3,
+      h4,
+      h5,
+      h6 {
         color: white;
-       }
-       p {
-           text-align: justify; 
-           margin: 20px 0;            
-       }
-       table {
-            color: white;
-           border-collapse: collapse;
-           width: 100%;
-           border: 1px solid #ccc;
-       }
-       th, td {
-        color:white;
-           border: 1px solid #eebbc3;
-           padding: 8px;
-           text-align: left;
-       }
-       th {
-           background-color: #eebbc3;
-       }
-       li{
+        font-size: 24px;
+        text-align: center;
+      }
+      h2 {
         color: white;
-       }
-       .contenedor-imagenes {
-            display: flex;
-            justify-content: center;
-        }
+      }
+      h3 {
+        color: white;
+      }
+      h7 {
+        color: white;
+      }
+      h8 {
+        color: white;
+      }
+      p {
+        text-align: justify;
+        margin: 20px 0;
+      }
+      table {
+        color: white;
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #ccc;
+      }
+      th,
+      td {
+        color: white;
+        border: 1px solid #eebbc3;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #eebbc3;
+      }
+      li {
+        color: white;
+      }
+      .contenedor-imagenes {
+        display: flex;
+        justify-content: center;
+      }
 
-        .contenedor-imagenes img {
-            max-width: 100%;
-            height: auto;
-         margin: 10px;
-        }
-        .tabla-responsive {
-             overflow-x: auto;
-        }
-</style>
-</head>
-<body>
+      .contenedor-imagenes img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px;
+      }
+      .tabla-responsive {
+        overflow-x: auto;
+      }
+    </style>
+  </head>
+  <body>
     <header class="header">
-        <h1 class="animate__animated animate__slideInUp">
-            <img src="../image/Predify RPG_logo.png" alt="logo" class="logo_header" width="20%">
-        </h1>
-        <div class="nav-bg">
-            <nav class="navegacion-principal contenedor">
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/AnalisisSistemas.html">Análisis y diseño de Sistemas</a>
-                <a href="../pages/MetodosNumericos.html">Metodos Numericos</a>
-                <a href="#">Arquitectura de Computadoras</a>
-            </nav>
-        </div><!--.nav-bg-->
+      <h1 class="animate__animated animate__slideInUp">
+        <img
+          src="../image/Predify RPG_logo.png"
+          alt="logo"
+          class="logo_header"
+          width="20%"
+        />
+      </h1>
+      <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+          <a href="../index.html">Inicio</a>
+          <a href="../pages/AnalisisSistemas.html"
+            >Análisis y diseño de Sistemas</a
+          >
+          <a href="../pages/MetodosNumericos.html">Metodos Numericos</a>
+          <a href="#">Arquitectura de Computadoras</a>
+        </nav>
+      </div>
+      <!--.nav-bg-->
     </header>
     <main class="contenedor sombra">
-        <h2>Desarrollo de Aplicaciones Móviles</h2>
-        <h3>DISEÑO RESPONSIVO</h3>
-    <p>
-        El diseño responsive es un formato de programación que permite ajustar un sitio web automáticamente al tamaño y disposición de los dispositivos de sus usuarios. Los sitios web responsive cambian para ofrecer la mejor experiencia a los visitantes desde sus teléfonos inteligentes, tabletas o computadoras de escritorio.
-    </p> 
-    <div class="contenedor-imagenes" align="Center">
-        <img src="../image/Diseño2-3.jpg" alt="Imagen-Diseño-Resposivo" width="700" , height="400">
-    </div>        
-    <h4>Características del diseño responsive</h4>
-    <p>
-        <li><strong>Adapta la web al ancho del dispositivo.</strong> El diseño normalmente pasa de ser un diseño horizontal a un diseño vertical, adaptándose al ancho del dispositivo. La fluidez de contenido hace que el usuario no tenga que desplazarse horizontalmente. </li><br> 
-        <li><strong>Reorganiza los distintos elementos de la web.</strong> Los contenidos de la web se disponen de tal forma que puedan verse correctamente en todas las pantallas. Se utilizan botones de mayor tamaño, para facilitar la interacción táctil, se reajustan el tamaño y la separación de la letra, para que sea más legible y se usan imágenes adaptables para cada dispositivo. </li><br>
-        <li><strong>Simplifica la web.</strong> Hay que priorizar los elementos, de tal forma que escogeremos los que sean necesarios, eliminando objetos gráficos que únicamente son estéticos y sólo tienen sentido en la versión de escritorio. Normalmente también se eliminarán los elementos que tardan mucho en cargarse. De esta forma reduciremos la carga visual y el tiempo de carga de la web. </li><br>
-        <li><strong>Cambio de apariencia de algunos elementos.</strong> El ejemplo más claro es el menú, que normalmente se convierte en desplegable, lo ahorra espacio de pantalla, o los botones, que serán más grandes. </li><br>
-    </p>
-    <div class="contenedor-imagenes" align="Center">
-        <img src="../image/resposivo2.png" alt="Imagen-Diseño-Resposivo" width="700" , height="400">
-    </div> 
-    <h4>Ventajas de un diseño responsive</h4>
-    <p> 
-        <li><strong>Carga de los elementos más rápida:</strong> Al tardar menos en cargar el usuario no se desespera y no abandona la página. </li><br>
-        <li><strong>Navegación más fácil: </strong>Al ser más pequeñas las pantallas de los móviles, los botones tienen que ser lo suficientemente grandes para no tener ninguna dificultad al pulsarlos. </li><br>
-        <li><strong>Adaptación de las imágenes y textos: </strong>Se evitarán las imágenes con detalles muy pequeños, las cuales no son apropiadas ya que no se podrán apreciar esos detalles. Los textos deben ser legibles a simple vista, sin necesidad de hacer zoom. </li><br>
-        <li><strong>Mejora del posicionamiento en buscadores: </strong> Google, Bing y el resto de principales buscadores penalizan las webs que no están adaptadas con un diseño responsive, empeorando así su posicionamiento y por tanto, su visibilidad online. </li><br>
-        <li><strong>Evita los contenidos duplicados: </strong>No tendremos que disponer dos webs completamente diferentes con los mismos contenidos, sino que es la misma. </li><br>
-        <li><strong>Permite reducir el tiempo de desarrollo:</strong> Ya que, debido a lo que indicamos en el punto anterior. </li><br>
-    </p>
-    <div class="contenedor-imagenes" align="Center">
-        <img src="../image/responsivo3.png" alt="Imagen-Diseño-Resposivo" width="700" , height="400">
-    </div> 
-    <h5>Elementos del diseño web responsive</h5>
-    <p>
-        <li><strong>Tamaño de visualización:</strong> El primer elemento que debes tomar en consideración al diseñar un sitio web responsive es el tamaño de visualización que los dispositivos de navegación ofrecen. Es decir, el espacio disponible que existe para que un usuario visualice contenidos en su dispositivo.</li><br>
-        <li><strong>Tamaño de navegación:</strong> El tamaño de navegación va más allá del tamaño de visualización (lo que se ve en la pantalla a cada momento), puesto que contempla el contenido navegable por los usuarios: lo que tu página web desea mostrar, su largo y el formato. </li><br>
-        <li><strong>Contenidos textuales:</strong> Los contenidos textuales son todos los materiales en formatos de letras y números que integran tu página: títulos, párrafos, llamados a la acción (CTA), etcétera. Estos contenidos deben estar programados para que el tamaño de las tipografías se ajuste al dispositivo de navegación y su configuración. </li><br>
-        <li><strong>Contenidos visuales:</strong> Es preciso que el diseño responsive considere a los visuales como un elemento crítico, en vista del incremento en el consumo de imágenes y la preferencia de los usuarios por datos expuestos en infografías, videos y gráficos.</li><br>
-        <li><strong>Identificadores de marca:</strong> Los indicadores de marca comprenden tu logo, el nombre de tu empresa y, en caso de existir, tu slogan. Estamos acostumbrados a verlos en gran formato en los sitios de escritorio, sin embargo, las páginas responsive, al adaptar la página, deben eliminar o simplificar algunos de estos indicadores, sin perder la identidad de tu empresa. </li><br>
-        <li><strong>Botones de acción:</strong> Los navegadores sirven para que las personas viajen de una página a otra o dentro de una misma. Y esto no sería posible sin botones de acción que extiendan las funcionalidades de la página o que los redirijan a donde esperan llegar.</li> <br>
-    </p>
-    <div class="contenedor-imagenes" align="Center">
-        <img src="../image/responsivo4.png" alt="Imagen-Diseño-Resposivo" width="700" , height="400">
-    </div> 
-    <h6>Importancia del diseño responsive</h6>   
-    <p>
-        Hoy día, más de la mitad de los accesos a sitios web en todo el mundo se realizan desde dispositivos móviles. Este dato demuestra la importancia de que las empresas ofrezcan una experiencia de navegación óptima en estas plataformas. Esta necesidad también se aplica a sitios web más pequeños, como los micrositios web o los sitios web one page.
-        Fomentar diseños responsive para que el cliente se sienta satisfecho en cada navegación es apenas la punta del iceberg. Hay factores que toda empresa debe considerar por las ventajas y beneficios que pueden obtener:
-        <li>El diseño web responsive ayuda a los consumidores a descubrir tu sitio web</li>
-        <li>El diseño web responsive mantiene a los compradores en tu sitio por más tiempo</li>
-        <li>El diseño web responsive genera reconocimiento de marca positivo y confianza en los consumidores</li>
-    </p>
-    <div class="contenedor-imagenes" align="center">
-        <img src="../image/resposivo5.png" alt="Imagen-Diseño-Resposivo" width="700" , height="400">
-    </div>
-    <h6>Diferencias entre <h7>Diseño Responsivo</h7> y <h8>Diseño Adaptativo</h8> </h6> 
-    <div class="tabla-responsive">
-    <table>
-    <tr>
-        <th>Característica</th>
+      <h2>Desarrollo de Aplicaciones Móviles</h2>
+      <h3>DISEÑO RESPONSIVO</h3>
+      <p>
+        El diseño responsive es un formato de programación que permite ajustar
+        un sitio web automáticamente al tamaño y disposición de los dispositivos
+        de sus usuarios. Los sitios web responsive cambian para ofrecer la mejor
+        experiencia a los visitantes desde sus teléfonos inteligentes, tabletas
+        o computadoras de escritorio.
+      </p>
+      <div class="contenedor-imagenes" align="Center">
+        <img
+          src="../image/Diseño2-3.jpg"
+          alt="Imagen-Diseño-Resposivo"
+          width="700"
+          ,
+          height="400"
+        />
+      </div>
+      <h4>Características del diseño responsive</h4>
+      <p>
+        <li>
+          <strong>Adapta la web al ancho del dispositivo.</strong> El diseño
+          normalmente pasa de ser un diseño horizontal a un diseño vertical,
+          adaptándose al ancho del dispositivo. La fluidez de contenido hace que
+          el usuario no tenga que desplazarse horizontalmente.
+        </li>
+        <br />
+        <li>
+          <strong>Reorganiza los distintos elementos de la web.</strong> Los
+          contenidos de la web se disponen de tal forma que puedan verse
+          correctamente en todas las pantallas. Se utilizan botones de mayor
+          tamaño, para facilitar la interacción táctil, se reajustan el tamaño y
+          la separación de la letra, para que sea más legible y se usan imágenes
+          adaptables para cada dispositivo.
+        </li>
+        <br />
+        <li>
+          <strong>Simplifica la web.</strong> Hay que priorizar los elementos,
+          de tal forma que escogeremos los que sean necesarios, eliminando
+          objetos gráficos que únicamente son estéticos y sólo tienen sentido en
+          la versión de escritorio. Normalmente también se eliminarán los
+          elementos que tardan mucho en cargarse. De esta forma reduciremos la
+          carga visual y el tiempo de carga de la web.
+        </li>
+        <br />
+        <li>
+          <strong>Cambio de apariencia de algunos elementos.</strong> El ejemplo
+          más claro es el menú, que normalmente se convierte en desplegable, lo
+          ahorra espacio de pantalla, o los botones, que serán más grandes.
+        </li>
+        <br />
+      </p>
+      <div class="contenedor-imagenes" align="Center">
+        <img
+          src="../image/resposivo2.png"
+          alt="Imagen-Diseño-Resposivo"
+          width="700"
+          ,
+          height="400"
+        />
+      </div>
+      <h4>Ventajas de un diseño responsive</h4>
+      <p>
+        <li>
+          <strong>Carga de los elementos más rápida:</strong> Al tardar menos en
+          cargar el usuario no se desespera y no abandona la página.
+        </li>
+        <br />
+        <li>
+          <strong>Navegación más fácil: </strong>Al ser más pequeñas las
+          pantallas de los móviles, los botones tienen que ser lo
+          suficientemente grandes para no tener ninguna dificultad al pulsarlos.
+        </li>
+        <br />
+        <li>
+          <strong>Adaptación de las imágenes y textos: </strong>Se evitarán las
+          imágenes con detalles muy pequeños, las cuales no son apropiadas ya
+          que no se podrán apreciar esos detalles. Los textos deben ser legibles
+          a simple vista, sin necesidad de hacer zoom.
+        </li>
+        <br />
+        <li>
+          <strong>Mejora del posicionamiento en buscadores: </strong> Google,
+          Bing y el resto de principales buscadores penalizan las webs que no
+          están adaptadas con un diseño responsive, empeorando así su
+          posicionamiento y por tanto, su visibilidad online.
+        </li>
+        <br />
+        <li>
+          <strong>Evita los contenidos duplicados: </strong>No tendremos que
+          disponer dos webs completamente diferentes con los mismos contenidos,
+          sino que es la misma.
+        </li>
+        <br />
+        <li>
+          <strong>Permite reducir el tiempo de desarrollo:</strong> Ya que,
+          debido a lo que indicamos en el punto anterior.
+        </li>
+        <br />
+      </p>
+      <div class="contenedor-imagenes" align="Center">
+        <img
+          src="../image/responsivo3.png"
+          alt="Imagen-Diseño-Resposivo"
+          width="700"
+          ,
+          height="400"
+        />
+      </div>
+      <h5>Elementos del diseño web responsive</h5>
+      <p>
+        <li>
+          <strong>Tamaño de visualización:</strong> El primer elemento que debes
+          tomar en consideración al diseñar un sitio web responsive es el tamaño
+          de visualización que los dispositivos de navegación ofrecen. Es decir,
+          el espacio disponible que existe para que un usuario visualice
+          contenidos en su dispositivo.
+        </li>
+        <br />
+        <li>
+          <strong>Tamaño de navegación:</strong> El tamaño de navegación va más
+          allá del tamaño de visualización (lo que se ve en la pantalla a cada
+          momento), puesto que contempla el contenido navegable por los
+          usuarios: lo que tu página web desea mostrar, su largo y el formato.
+        </li>
+        <br />
+        <li>
+          <strong>Contenidos textuales:</strong> Los contenidos textuales son
+          todos los materiales en formatos de letras y números que integran tu
+          página: títulos, párrafos, llamados a la acción (CTA), etcétera. Estos
+          contenidos deben estar programados para que el tamaño de las
+          tipografías se ajuste al dispositivo de navegación y su configuración.
+        </li>
+        <br />
+        <li>
+          <strong>Contenidos visuales:</strong> Es preciso que el diseño
+          responsive considere a los visuales como un elemento crítico, en vista
+          del incremento en el consumo de imágenes y la preferencia de los
+          usuarios por datos expuestos en infografías, videos y gráficos.
+        </li>
+        <br />
+        <li>
+          <strong>Identificadores de marca:</strong> Los indicadores de marca
+          comprenden tu logo, el nombre de tu empresa y, en caso de existir, tu
+          slogan. Estamos acostumbrados a verlos en gran formato en los sitios
+          de escritorio, sin embargo, las páginas responsive, al adaptar la
+          página, deben eliminar o simplificar algunos de estos indicadores, sin
+          perder la identidad de tu empresa.
+        </li>
+        <br />
+        <li>
+          <strong>Botones de acción:</strong> Los navegadores sirven para que
+          las personas viajen de una página a otra o dentro de una misma. Y esto
+          no sería posible sin botones de acción que extiendan las
+          funcionalidades de la página o que los redirijan a donde esperan
+          llegar.
+        </li>
+        <br />
+      </p>
+      <div class="contenedor-imagenes" align="Center">
+        <img
+          src="../image/responsivo4.png"
+          alt="Imagen-Diseño-Resposivo"
+          width="700"
+          ,
+          height="400"
+        />
+      </div>
+      <h6>Importancia del diseño responsive</h6>
+      <p>
+        Hoy día, más de la mitad de los accesos a sitios web en todo el mundo se
+        realizan desde dispositivos móviles. Este dato demuestra la importancia
+        de que las empresas ofrezcan una experiencia de navegación óptima en
+        estas plataformas. Esta necesidad también se aplica a sitios web más
+        pequeños, como los micrositios web o los sitios web one page. Fomentar
+        diseños responsive para que el cliente se sienta satisfecho en cada
+        navegación es apenas la punta del iceberg. Hay factores que toda empresa
+        debe considerar por las ventajas y beneficios que pueden obtener:
+        <li>
+          El diseño web responsive ayuda a los consumidores a descubrir tu sitio
+          web
+        </li>
+        <li>
+          El diseño web responsive mantiene a los compradores en tu sitio por
+          más tiempo
+        </li>
+        <li>
+          El diseño web responsive genera reconocimiento de marca positivo y
+          confianza en los consumidores
+        </li>
+      </p>
+      <div class="contenedor-imagenes" align="center">
+        <img
+          src="../image/resposivo5.png"
+          alt="Imagen-Diseño-Resposivo"
+          width="700"
+          ,
+          height="400"
+        />
+      </div>
+      <h6>
+        Diferencias entre <h7>Diseño Responsivo</h7> y
+        <h8>Diseño Adaptativo</h8>
+      </h6>
+      <div class="tabla-responsive">
+        <table>
+          <tr>
+            <th>Característica</th>
             <th>Diseño Responsivo</th>
             <th>Diseño Adaptativo</th>
-    </tr>
-    <tr>
-        <td>Definición</td>
-            <td>Se adapta a diferentes tamaños de pantalla mediante el uso de unidades relativas (porcentajes, em, vw, etc.) y consultas de medios (media queries).</td>
-            <td>Adapta el diseño a tamaños de pantalla específicos mediante el uso de diseños predefinidos para ciertos tamaños o dispositivos.</td>
-    </tr>
-  <tr>
-        <td>Flexibilidad</td>
-            <td>Es altamente flexible y puede adaptarse a cualquier tamaño de pantalla.</td>
-            <td>Ofrece menos flexibilidad en comparación con el diseño responsive, ya que está diseñado para tamaños de pantalla específicos.</td>
-  </tr>
-  <tr>
-        <td>Implementación</td>
-            <td>Requiere el uso de media queries en el CSS para ajustar los estilos según el tamaño de pantalla.</td>
-            <td>Requiere el uso de diseños predefinidos y a menudo se utilizan técnicas como los "breakpoints" para cambiar de diseño en tamaños de pantalla específicos.</td>
-  </tr>
-  <tr>
-        <td>Ancho de banda</td>
-            <td>Puede requerir más ancho de banda ya que a veces se envían estilos que no se utilizan en tamaños de pantalla más pequeños.</td>
-            <td>Puede ser más eficiente en términos de ancho de banda, ya que solo se envían los estilos necesarios para el tamaño de pantalla actual.</td>
-  </tr>
-  <tr>
-        <td>Experiencia de usuario</td>
-            <td>Ofrece una experiencia de usuario más uniforme y optimizada en una amplia gama de dispositivos y tamaños de pantalla.</td>
-            <td>Aunque proporciona adaptabilidad, la experiencia de usuario puede variar dependiendo de si se trata de un tamaño de pantalla previsto o no.</td>
-  </tr>
-  <tr>
-        <td>Mantenimiento</td>
-            <td>Puede ser más fácil de mantener a largo plazo, ya que los cambios de diseño se realizan principalmente a través de CSS y media queries.</td>
-            <td>Puede requerir más esfuerzo de mantenimiento, ya que a menudo implica mantener múltiples diseños específicos para diferentes tamaños de pantalla.</td>
-  </tr>
-  <tr>
-        <td>Popularidad</td>
-            <td>Es la técnica preferida y recomendada para el diseño web moderno.</td>
-            <td>Aunque todavía se utiliza en algunos casos, el diseño adaptativo ha perdido popularidad a favor del diseño responsivo en la mayoría de los casos.</td>
-  </tr>
-    </table> 
-</div>
-    </table>
-</div>  
-     </main> 
+          </tr>
+          <tr>
+            <td>Definición</td>
+            <td>
+              Se adapta a diferentes tamaños de pantalla mediante el uso de
+              unidades relativas (porcentajes, em, vw, etc.) y consultas de
+              medios (media queries).
+            </td>
+            <td>
+              Adapta el diseño a tamaños de pantalla específicos mediante el uso
+              de diseños predefinidos para ciertos tamaños o dispositivos.
+            </td>
+          </tr>
+          <tr>
+            <td>Flexibilidad</td>
+            <td>
+              Es altamente flexible y puede adaptarse a cualquier tamaño de
+              pantalla.
+            </td>
+            <td>
+              Ofrece menos flexibilidad en comparación con el diseño responsive,
+              ya que está diseñado para tamaños de pantalla específicos.
+            </td>
+          </tr>
+          <tr>
+            <td>Implementación</td>
+            <td>
+              Requiere el uso de media queries en el CSS para ajustar los
+              estilos según el tamaño de pantalla.
+            </td>
+            <td>
+              Requiere el uso de diseños predefinidos y a menudo se utilizan
+              técnicas como los "breakpoints" para cambiar de diseño en tamaños
+              de pantalla específicos.
+            </td>
+          </tr>
+          <tr>
+            <td>Ancho de banda</td>
+            <td>
+              Puede requerir más ancho de banda ya que a veces se envían estilos
+              que no se utilizan en tamaños de pantalla más pequeños.
+            </td>
+            <td>
+              Puede ser más eficiente en términos de ancho de banda, ya que solo
+              se envían los estilos necesarios para el tamaño de pantalla
+              actual.
+            </td>
+          </tr>
+          <tr>
+            <td>Experiencia de usuario</td>
+            <td>
+              Ofrece una experiencia de usuario más uniforme y optimizada en una
+              amplia gama de dispositivos y tamaños de pantalla.
+            </td>
+            <td>
+              Aunque proporciona adaptabilidad, la experiencia de usuario puede
+              variar dependiendo de si se trata de un tamaño de pantalla
+              previsto o no.
+            </td>
+          </tr>
+          <tr>
+            <td>Mantenimiento</td>
+            <td>
+              Puede ser más fácil de mantener a largo plazo, ya que los cambios
+              de diseño se realizan principalmente a través de CSS y media
+              queries.
+            </td>
+            <td>
+              Puede requerir más esfuerzo de mantenimiento, ya que a menudo
+              implica mantener múltiples diseños específicos para diferentes
+              tamaños de pantalla.
+            </td>
+          </tr>
+          <tr>
+            <td>Popularidad</td>
+            <td>
+              Es la técnica preferida y recomendada para el diseño web moderno.
+            </td>
+            <td>
+              Aunque todavía se utiliza en algunos casos, el diseño adaptativo
+              ha perdido popularidad a favor del diseño responsivo en la mayoría
+              de los casos.
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
 
-     <footer class="footer">
-       <p class="footer">Todos los derechos reservados. Predify RPG</p>
+    <footer class="footer">
+      <p class="footer">Todos los derechos reservados. Predify RPG</p>
     </footer>
-</body>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+    <!--=============== MAIN JS ===============-->
+    <script src="../js/script.js"></script>
+  </body>
 </html>

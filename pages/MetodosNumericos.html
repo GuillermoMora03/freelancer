@@ -1,83 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>Métodos Numéricos</title>
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">  
-    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/styles.css" as="style" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <h1 class="animate__animated animate__slideInUp">
-            <img src="../image/Predify RPG_logo.png" alt="logo" class="logo_header" width="20%">
-        </h1>
-        <div class="nav-bg">
-            <nav class="navegacion-principal contenedor">                
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/AnalisisSistemas.html">Análisis y diseño de Sistemas</a>
-                <a href="#">Arquitectura de Computadoras</a>
-                <a href="./AplicacionesMóviles.html">Diseño Movil</a>
-            </nav>
-        </div>
-    </header>    
+      <h1 class="animate__animated animate__slideInUp">
+        <img
+          src="../image/Predify RPG_logo.png"
+          alt="logo"
+          class="logo_header"
+          width="20%"
+        />
+      </h1>
+      <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+          <a href="../index.html">Inicio</a>
+          <a href="../pages/AnalisisSistemas.html"
+            >Análisis y diseño de Sistemas</a
+          >
+          <a href="#">Arquitectura de Computadoras</a>
+          <a href="./AplicacionesMóviles.html">Diseño Movil</a>
+        </nav>
+      </div>
+    </header>
     <!--.nav-bg-->
     <main class="contenedor sombra">
-        <h2 class="title_PuntoFijo">Punto Fijo</h2>
+      <h2 class="title_PuntoFijo">Punto Fijo</h2>
 
-        <div class="Intro-Metodo">
-            
-            <section>                                   
-                <p class="Descripcion_Metodo">El método del punto fijo es un método iterativo que permite resolver sistemas de ecuaciones no necesariamente lineales. En particular se puede utilizar para determinar raíces de una función de la forma f(x), siempre y cuando se cumplan los criterios de convergencia.</p>
-                <p class="Descripcion_Metodo">El método de iteración de punto fijo, también denominado método de aproximación sucesiva, requiere volver a escribir la ecuación f(x) = 0 en la forma x = g(x)</p>
-                <p class="Descripcion_Metodo">El método numérico de punto fijo es una técnica ampliamente utilizada en la resolución de ecuaciones en diversas áreas de la vida diaria y de la ciencia. A continuacion se mostraran algunos ejemplos: </p>
+      <div class="Intro-Metodo">
+        <section>
+          <p class="Descripcion_Metodo">
+            El método del punto fijo es un método iterativo que permite resolver
+            sistemas de ecuaciones no necesariamente lineales. En particular se
+            puede utilizar para determinar raíces de una función de la forma
+            f(x), siempre y cuando se cumplan los criterios de convergencia.
+          </p>
+          <p class="Descripcion_Metodo">
+            El método de iteración de punto fijo, también denominado método de
+            aproximación sucesiva, requiere volver a escribir la ecuación f(x) =
+            0 en la forma x = g(x)
+          </p>
+          <p class="Descripcion_Metodo">
+            El método numérico de punto fijo es una técnica ampliamente
+            utilizada en la resolución de ecuaciones en diversas áreas de la
+            vida diaria y de la ciencia. A continuacion se mostraran algunos
+            ejemplos:
+          </p>
 
-                <ul class="u-list">
-                    <h4>Inversión financiera</h4>
-                    <li>Si tienes una inversión que genera un interés compuesto, puedes utilizar el método de punto fijo para determinar cuánto tiempo tomará duplicar tu inversión a una tasa de interés dada.</li>
+          <ul class="u-list">
+            <h4>Inversión financiera</h4>
+            <li>
+              Si tienes una inversión que genera un interés compuesto, puedes
+              utilizar el método de punto fijo para determinar cuánto tiempo
+              tomará duplicar tu inversión a una tasa de interés dada.
+            </li>
 
-                    <h4>Resolución de ecuaciones no lineales</h4>
-                    <li>En la física y la ingeniería, muchas ecuaciones no lineales se pueden resolver utilizando el método de punto fijo. Por ejemplo, al determinar las raíces de ecuaciones que modelan el movimiento de un objeto bajo la influencia de la gravedad.</li>
+            <h4>Resolución de ecuaciones no lineales</h4>
+            <li>
+              En la física y la ingeniería, muchas ecuaciones no lineales se
+              pueden resolver utilizando el método de punto fijo. Por ejemplo,
+              al determinar las raíces de ecuaciones que modelan el movimiento
+              de un objeto bajo la influencia de la gravedad.
+            </li>
 
-                    <h4>Mecánica estructural</h4>
-                    <li>En ingeniería civil, se pueden utilizar métodos de punto fijo para analizar la deformación y el comportamiento de estructuras bajo diferentes cargas.</li>
-                    
-                    <h4>Modelado de poblaciones</h4>
-                    <li>En ecología y biología, el método de punto fijo se utiliza para modelar el crecimiento y la evolución de poblaciones de seres vivos en un entorno dado.</li>
+            <h4>Mecánica estructural</h4>
+            <li>
+              En ingeniería civil, se pueden utilizar métodos de punto fijo para
+              analizar la deformación y el comportamiento de estructuras bajo
+              diferentes cargas.
+            </li>
 
-                    <h4>Dinámica de fluidos</h4>
-                    <li>En la ingeniería y la ciencia de los fluidos, el método de punto fijo se aplica para resolver ecuaciones que describen el flujo de fluidos en tuberías y canales.</li>
-                </ul>
-                
-            </section>           
-            
-            <div>                
-                <h2>Diagrama de Flujo</h2>
-                <section class="servicio">                    
-                    <img srcset="../image/DDF(Movil).png 480w, ../image/DFD.jpg 1024w" sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw" alt="Imagen" class="imagen-responsive" />
+            <h4>Modelado de poblaciones</h4>
+            <li>
+              En ecología y biología, el método de punto fijo se utiliza para
+              modelar el crecimiento y la evolución de poblaciones de seres
+              vivos en un entorno dado.
+            </li>
 
-                </section>
-            </div> 
+            <h4>Dinámica de fluidos</h4>
+            <li>
+              En la ingeniería y la ciencia de los fluidos, el método de punto
+              fijo se aplica para resolver ecuaciones que describen el flujo de
+              fluidos en tuberías y canales.
+            </li>
+          </ul>
+        </section>
 
-            <h2>Funcionamiento</h2>
-            
-        </div><!--.servicios-->
+        <div>
+          <h2>Diagrama de Flujo</h2>
+          <section class="servicio">
+            <img
+              srcset="../image/DDF(Movil).png 480w, ../image/DFD.jpg 1024w"
+              sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+              alt="Imagen"
+              class="imagen-responsive"
+            />
+          </section>
+        </div>
+
+        <h2>Funcionamiento</h2>
+      </div>
+      <!--.servicios-->
     </main>
     <footer class="footer">
-        <p class="footer">Todos los derechos reservados. Predify RPG</p>       
+      <p class="footer">Todos los derechos reservados. Predify RPG</p>
     </footer>
-</body>
 
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="../js/script.js"></script>
+  </body>
 </html>
