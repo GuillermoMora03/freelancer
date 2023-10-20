@@ -395,3 +395,17 @@ h4{
 li{
     color: var(--paragraph);
    }
+   
+   table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    overflow-x: auto;
+  }
+  
+  th, td {
+    padding: 4px; 
+    text-align: left;
+    white-space: nowrap;
+    font-size: 14px; 
+  }
