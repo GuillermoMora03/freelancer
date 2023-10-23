@@ -359,7 +359,7 @@ header{
     }
 }
 
-.dc , .d1 , .dc1 {
+.dc {
     view-timeline-name: --revealing-image;
 
     animation-name: show;
@@ -367,6 +367,24 @@ header{
     animation-timeline: --revealing-image;
     animation-range: entry 25% cover 50%;
     width: 100%;
+}
+.d1 {
+    view-timeline-name: --revealing-image;
+
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --revealing-image;
+    animation-range: entry 25% cover 50%;
+    width: 90%;
+}
+.dc1 {
+    view-timeline-name: --revealing-image;
+
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --revealing-image;
+    animation-range: entry 25% cover 50%;
+    width: 30%;
 }
 .logo_header{
     view-timeline-name: --revealing-image;
