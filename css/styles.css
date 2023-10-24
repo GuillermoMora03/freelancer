@@ -226,27 +226,34 @@ h1,h2,h3{
     width: 45%;
 }
 
-/* Animación para las secciones de servicio */
+/* Estilos para las secciones de servicio con mayor resaltado al pasar el cursor */
 .servicio {
-    transition: transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     transform: translateY(0);
     opacity: 1;
+    border: 2px solid var(--Morado);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .servicio:hover {
     transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Mayor sombreado al pasar el cursor */
 }
 
-/* Animación para los iconos */
+/* Estilos para los iconos con cambio de color */
 .servicio .iconos svg {
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     transform: scale(1);
+    color: var(--secundario);
 }
 
 .servicio:hover .iconos svg {
     transform: scale(1.2);
+    color: var(--obscuro);
 }
-
 
 
 /**Contacto**/
