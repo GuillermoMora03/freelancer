@@ -226,6 +226,28 @@ h1,h2,h3{
     width: 45%;
 }
 
+/* Animación para las secciones de servicio */
+.servicio {
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+}
+
+/* Animación para los iconos */
+.servicio .iconos svg {
+    transition: transform 0.3s;
+    transform: scale(1);
+}
+
+.servicio:hover .iconos svg {
+    transform: scale(1.2);
+}
+
+
 
 /**Contacto**/
 .formulario{
@@ -409,29 +431,29 @@ li{
     color: var(--paragraph);
    }
 
-   /* BOTON PARA EL SCROOL DE SUBIR */
-   .scrollup{
+/* Estilos para el botón de scroll cuadrado y más grande */
+.scrollup {
     position: fixed;
     right: 1rem;
     bottom: -10%;
-    background: linear-gradient(180deg,
-                #b8c1ec 0%,
-                #DFE9F3 100%);
-    box-shadow: 0 0 8px hsla(12, 32%, 12%, .5);
-    color: white;
-    font-size: 1.1rem;
+    background: linear-gradient(180deg, var(--Morado) 0%, var(--primario) 100%);
+    box-shadow: 0 0 8px var(--stroke);
+    color: var(--secundario);
+    font-size: 1.6rem; /* Tamaño de fuente más grande */
     display: inline-flex;
-    padding: .6rem;
-    border-radius: 50%;
+    padding: 1.1rem; /* Mayor espacio interior */
+    border-radius: 10px; /* Bordes redondeados */
     z-index: 99999;
     transition: bottom .5s, transform .3s;
-  }
-  
-  .scrollup:hover{
-    transform: translateY(-.25rem);
-  }
+    cursor: pointer;
+}
 
-  /* Show Scroll Up */
-.show-scroll{
-    bottom: 7rem;
-  }
+.scrollup:hover {
+    transform: translateY(-.25rem);
+}
+
+/* Show Scroll Up */
+.show-scroll {
+    bottom: 5rem;
+}
+
