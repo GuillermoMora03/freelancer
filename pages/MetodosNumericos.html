@@ -23,6 +23,8 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
     rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.0/math.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <title>Métodos Numéricos</title>
   </head>
   <body>
@@ -122,6 +124,139 @@
         </div>
 
         <h2>Funcionamiento</h2>
+
+        <div>
+           <!-- Entradas para la ecuación, suposición inicial, y número máximo de iteraciones -->
+    <input type="text" id="inputEquation" placeholder="Introduce la ecuación g(x) (Por ejemplo, e^-x)">
+    <input type="text" id="initialGuess" placeholder="Suposición inicial (Por ejemplo, 0)">
+    <input type="number" id="maxIterations" placeholder="Número máximo de iteraciones">
+    <button onclick="resolverPuntoFijo()">Resolver</button>
+    <!-- Tabla donde se mostrarán los resultados -->
+    <table>
+        <thead>
+            <tr>
+                <th>Iteración</th>
+                <th>x</th>
+                <th>Error</th>
+            </tr>
+        </thead>
+        <tbody id="resultado"></tbody>
+    </table>
+    <!-- Gráfico de iteraciones, x y ecuación -->
+    <div style="max-width: 400px; margin: 0 auto;">
+        <canvas id="graficoIteraciones" style="width: 100%; height: 200px;"></canvas>
+    </div>
+
+    <script>
+        let stopIteration = false; // Variable para detener las iteraciones
+        let chart = null; // Variable para el gráfico de iteraciones, x y ecuación
+
+        function resolverPuntoFijo() {
+            stopIteration = false; // Restablece la variable de detención
+
+            // Obtener el elemento del gráfico de iteraciones y eliminar el gráfico anterior si existe
+            const chartElement = document.getElementById("graficoIteraciones");
+            if (chart !== null) {
+                chart.destroy();
+            }
+
+            // Obtener el elemento de la tabla de resultados y eliminar los resultados anteriores
+            const resultList = document.getElementById("resultado");
+            resultList.innerHTML = "";
+
+            // Obtener la ecuación, suposición inicial y número máximo de iteraciones desde el formulario
+            const inputEquation = document.getElementById("inputEquation").value;
+            const initialGuess = parseFloat(document.getElementById("initialGuess").value);
+            const maxIterations = parseInt(document.getElementById("maxIterations").value);
+
+            try {
+                // Crear un objeto de ámbito para la evaluación de la ecuación
+                const scope = { x: initialGuess };
+                const tolerance = 1e-6; // Tolerancia para detener las iteraciones
+                let x = initialGuess;
+                const iterationData = []; // Almacenar datos de iteración para el gráfico
+
+                // Crear datos para el gráfico
+                const labels = [];
+                const xValues = [];
+                const errors = [];
+                const ecuacionData = [];
+
+                // Ejecutar el método de punto fijo hasta que se alcance la tolerancia o el número máximo de iteraciones
+                for (let i = 0; i < maxIterations; i++) {
+                    // Verificar si se debe detener la iteración
+                    if (stopIteration) {
+                        break;
+                    }
+
+                    const gx = math.evaluate(inputEquation, scope); // Evaluar la ecuación g(x) en el ámbito actual
+                    const error = Math.abs(gx - x);
+
+                    // Agregar datos de iteración al array
+                    iterationData.push({ iteration: i + 1, x, error });
+
+                    labels.push(i + 1);
+                    xValues.push(x);
+                    errors.push(error);
+                    ecuacionData.push(gx);
+
+                    // Agregar fila a la tabla de resultados
+                    const newRow = resultList.insertRow();
+                    const cell1 = newRow.insertCell(0);
+                    const cell2 = newRow.insertCell(1);
+                    const cell3 = newRow.insertCell(2);
+                    cell1.textContent = i + 1;
+                    cell2.textContent = x;
+                    cell3.textContent = error;
+
+                    if (error < tolerance) {
+                        x = gx;
+                        break;
+                    }
+
+                    x = gx;
+                    scope.x = x; // Actualizar el valor de x en el ámbito para la siguiente iteración
+                }
+
+                // Crear un gráfico de iteraciones, x y ecuación
+                const ctx = chartElement.getContext("2d");
+
+                chart = new Chart(ctx, {
+                    type: "line",
+                    data: {
+                        labels: labels,
+                        datasets: [
+                            {
+                                label: "x",
+                                data: xValues,
+                                borderColor: "green",
+                                fill: false,
+                            },
+                            {
+                                label: "Ecuación",
+                                data: ecuacionData,
+                                borderColor: "red",
+                                fill: false,
+                            },
+                        ],
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                    },
+                });
+
+            } catch (error) {
+                // Manejar errores en la ecuación
+                resultList.textContent = "Error en la ecuación";
+            }
+        }
+
+        function stopIterations() {
+            stopIteration = true; // Detener las iteraciones
+        }
+    </script>
+        </div>
       </div>
       <!--.servicios-->
     </main>
