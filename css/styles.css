@@ -413,7 +413,7 @@ header{
     animation-fill-mode: both;
     animation-timeline: --revealing-image;
     animation-range: entry 25% cover 50%;
-    width: 30%;
+    width: 60%;
 }
 .logo_header{
     view-timeline-name: --revealing-image;
