@@ -588,3 +588,13 @@ li{
   }
   
   
+  /* Analisis */
+  .btn-Diccionario{
+    background:  var(--primario);
+    color: var(--secundario);
+    font-size: 1.6rem; /* Tamaño de fuente más grande */
+    padding: 1.1rem; /* Mayor espacio interior */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    font-family: "Poppins";
+  }
