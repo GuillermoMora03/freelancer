@@ -510,3 +510,81 @@ li{
     white-space: nowrap;
     font-size: 14px; 
   }
+
+
+  /* Metodo numerico */
+  .entrada {
+    background-color: var(--secundario);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.entrada input[type="text"],
+.entrada input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--gris);
+    background-color: var(--secundario);
+    color: var(--obscuro);
+}
+
+.entrada input[type="text"]::placeholder,
+.entrada input[type="number"]::placeholder {
+    color: var(--gris);
+}
+
+.entrada button {
+    background-color: var(--Morado);
+    color: var(--secundario);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.entrada button:hover {
+    background-color: var(--Morado-obscuro);
+}
+
+.entrada table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: "Poppins";
+}
+
+.entrada table th {
+    background-color: var(--Morado);
+    color: var(--secundario);
+    padding: 10px;
+}
+
+.entrada table td {
+    background-color: var(--secundario);
+    color: var(--obscuro);
+    padding: 10px;
+}
+
+.entrada #resultado tr:nth-child(odd) {
+    background-color: var(--secundario);
+}
+
+.entrada #resultado tr:nth-child(even) {
+    background-color: var(--gris);
+}
+
+/* Estilos para pantallas más pequeñas */
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .entrada table {
+      font-size: 12px !important; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+    .entrada table th,
+    .entrada table td {
+      padding: 5px !important; /* Reduce el espaciado para celdas en pantallas más pequeñas */
+    }
+  }
+  
+  

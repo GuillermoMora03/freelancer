@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="icon" href="../image/Icono.ico" type="icon">
     <link
       href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap"
       rel="stylesheet"
@@ -124,7 +123,7 @@
 
         <h2>Funcionamiento</h2>
 
-        <div>
+        <div class="entrada">
           <!-- Entradas para la ecuación, suposición inicial, y número máximo de iteraciones -->
           <input
             type="text"
@@ -154,13 +153,21 @@
             <tbody id="resultado"></tbody>
           </table>
           <!-- Gráfico de iteraciones, x y ecuación -->
-          <div style="max-width: 400px; margin: 0 auto">
+          <div
+            style="
+              max-width: 400px;
+              margin: 0 auto;
+              background-color: var(--secundario);
+              padding: 20px;
+              border-radius: 10px;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            "
+          >
             <canvas
               id="graficoIteraciones"
               style="width: 100%; height: 200px"
             ></canvas>
           </div>
-
           <script>
             let stopIteration = false; // Variable para detener las iteraciones
             let chart = null; // Variable para el gráfico de iteraciones, x y ecuación
@@ -226,8 +233,8 @@
                   const cell2 = newRow.insertCell(1);
                   const cell3 = newRow.insertCell(2);
                   cell1.textContent = i + 1;
-                  cell2.textContent = x;
-                  cell3.textContent = error;
+                  cell2.textContent = x.toFixed(7);
+                  cell3.textContent = error.toFixed(5);
 
                   if (error < tolerance) {
                     x = gx;
@@ -239,7 +246,9 @@
                 }
 
                 // Crear un gráfico de iteraciones, x y ecuación
-                const ctx = chartElement.getContext("2d");
+                const ctx = document
+                  .getElementById("graficoIteraciones")
+                  .getContext("2d");
 
                 chart = new Chart(ctx, {
                   type: "line",
@@ -249,13 +258,13 @@
                       {
                         label: "x",
                         data: xValues,
-                        borderColor: "green",
+                        borderColor: "#000080",
                         fill: false,
                       },
                       {
                         label: "Ecuación",
                         data: ecuacionData,
-                        borderColor: "red",
+                        borderColor: "#333333",
                         fill: false,
                       },
                     ],
@@ -263,6 +272,36 @@
                   options: {
                     responsive: true,
                     maintainAspectRatio: false,
+                    scales: {
+                      x: {
+                        display: true,
+                        scaleLabel: {
+                          display: true,
+                          labelString: "Iteración",
+                        },
+                        ticks: {
+                          fontColor: "var(--gris)",
+                        },
+                      },
+                      y: {
+                        display: true,
+                        scaleLabel: {
+                          display: true,
+                          labelString: "Valor",
+                        },
+                        ticks: {
+                          fontColor: "var(--gris)",
+                        },
+                      },
+                    },
+                    plugins: {
+                      legend: {
+                        display: true,
+                        labels: {
+                          fontColor: "var(--gris)",
+                        },
+                      },
+                    },
                   },
                 });
               } catch (error) {
