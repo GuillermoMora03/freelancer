@@ -349,13 +349,24 @@ h1,h2,h3{
       max-width: 100%;
       height: auto;
     }
+    .dc1 {        
+        width: 100% !important;        
+    }
+    .logo_header{
+        view-timeline-name: --revealing-image;
+        animation-name: show;
+        animation-fill-mode: both;
+        animation-timeline: --revealing-image;
+        animation-range: entry 25% cover 50%;
+        animation-duration: 1s;
+    }
+    
   }
 
 
 @media (min-width: 768px) {
     .Intro-Metodo{
-        display: grid;
-        /* grid-template-columns: repeat(2, 1fr); */
+        display: grid;        
     }
 }
 
@@ -395,7 +406,7 @@ header{
     animation-fill-mode: both;
     animation-timeline: --revealing-image;
     animation-range: entry 25% cover 50%;
-    width: 100%;
+    width: 90%;
 }
 .d1 {
     view-timeline-name: --revealing-image;
@@ -403,8 +414,9 @@ header{
     animation-name: show;
     animation-fill-mode: both;
     animation-timeline: --revealing-image;
-    animation-range: entry 25% cover 50%;
-    width: 90%;
+    animation-range: entry 25% cover 60%;
+    width: 100%;
+    animation-duration: 1s;
 }
 .dc1 {
     view-timeline-name: --revealing-image;
@@ -413,7 +425,8 @@ header{
     animation-fill-mode: both;
     animation-timeline: --revealing-image;
     animation-range: entry 25% cover 50%;
-    width: 60%;
+    width: 80%;
+    animation-duration: 1s;
 }
 .logo_header{
     view-timeline-name: --revealing-image;
@@ -421,6 +434,7 @@ header{
     animation-fill-mode: both;
     animation-timeline: --revealing-image;
     animation-range: entry 25% cover 50%;
+    animation-duration: 1s;
 }
 
 p{
@@ -429,10 +443,6 @@ p{
     font-size: 20px;
     text-align: justify;  
 }
-
-/* .Descripcion_Metodo {
-    
-} */
 
 .u-list{
     font-size: 20px;
