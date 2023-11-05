@@ -456,15 +456,9 @@ h4{
     color: var(--secundario);
 }
 .title_PuntoFijo{
-    font-family: 'Gabarito', sans-serif; 
-    font-size: 45px;
+    font-family: 'Poppins', sans-serif;  
+    font-size: 40px;
 }
-
-/* Pagina Aplicacione Moviles */
-
-li{
-    color: var(--paragraph);
-   }
 
 /* Estilos para el botón de scroll cuadrado y más grande */
 .scrollup {
