@@ -353,6 +353,13 @@ h1,h2,h3{
     .dc1 {        
         width: 100% !important;        
     }
+    .dc{
+    width: 100%!important; 
+    }
+
+    .d1{
+        width: 100%!important;
+    }
     .logo_header{
         view-timeline-name: --revealing-image;
         animation-name: show;
