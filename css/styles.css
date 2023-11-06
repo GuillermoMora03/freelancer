@@ -67,6 +67,10 @@ body{
     border-radius: 1rem;
 }
 
+li{
+    color: var(--paragraph);
+}
+
 /* TIPOGRAFIA */
 h1{
     color: var(--secundario);
