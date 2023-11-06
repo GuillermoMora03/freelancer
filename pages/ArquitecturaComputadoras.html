@@ -1,74 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/styles.css" rel="stylesheet">
-    <link rel="preload" href="../css/styles.css" as="style">
-    <link rel="preload" href="../css/normalize.css" as="style">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preload" href="../css/styles.css" as="style" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="preload" href="../css/normalize.css" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" href="../image/Icono.ico" type="icon">
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" 
-    rel="stylesheet">
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap"
+      rel="stylesheet"
     />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-    rel="stylesheet"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Análisis y diseño de Sistemas</title>
-</head>
-<body>    
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.2.0/math.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <title>Arquitectura Computadoras</title>
+  </head>
+  <body>
     <header class="header">
-        <h1 class="animate__animated animate__slideInUp">
-            <img src="../image/Predify RPG_logo.png" alt="logo" class="logo_header" width="20%">
-        </h1>
-        <div class="nav-bg">
-            <nav class="navegacion-principal contenedor">
-                <a href="../index.html">Inicio</a>
-                <a href="../pages/MetodosNumericos.html">Metodos Numericos</a>
-                <a href="#">Arquitectura de Computadoras</a>
-                <a href="../pages/AplicacionesMóviles.html">Diseño Movil</a>
-            </nav>
-        </div>       
+      <h1 class="animate__animated animate__slideInUp">
+        <img
+          src="../image/Predify RPG_logo.png"
+          alt="logo"
+          class="logo_header"
+          width="20%"
+        />
+      </h1>
+      <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+          <a href="../index.html">Inicio</a>
+          <a href="./AnalisisSistemas.html">Análisis y diseño de Sistemas</a>
+          <a href="../pages/ArquitecturaComputadoras.html">Arquitectura de Computadoras</a>
+          <a href="./AplicacionesMóviles.html">Diseño Movil</a>
+        </nav>
+      </div>
     </header>
-
+    <!--.nav-bg-->
     <main class="contenedor sombra">
-        <h1>Análisis y diseño de sistemas</h1>
-        <div>
-            <h3>Diagrama de Contexto</h3>
-            <section class="servicio">
-                <img src="../image/Diagrama de Contexto.jpeg" alt="Diagrama de Contexto" class="dc">
-            </section>
+      <h2 class="title_PuntoFijo">Ensamblador x86</h2>
 
-            <h3>Diagrama de flujo de datos</h3>
-            <section class="servicio">
-                <img src="../image/Diagramas de flujo de datos_ nivel 1.jpeg" alt="Diagrama de flujo de datos" class="d1">
+      <div class="Intro-Metodo">
+        <section>
+          <p>
+            El lenguaje ensamblador x86 es el nombre de la familia de lenguajes ensambladores 
+            que brinda cierto nivel de compatibilidad con versiones anteriores de CPU hasta el microprocesador Intel 8008, 
+            que se lanzó en abril de 1972. Se utiliza para producir código objeto para la clase de procesadores x86.
+          </p>
+          <p>
+            Considerado como un lenguaje de programación, el ensamblaje es específico de la máquina y de bajo nivel. 
+            Como todos los lenguajes ensambladores, el ensamblador x86 usa mnemónicos para representar instrucciones fundamentales de la CPU o código de máquina. 
+          </p>
+          <p>
+            Los lenguajes ensambladores se usan con mayor frecuencia para aplicaciones detalladas y de tiempo crítico, 
+            como pequeños sistemas integrados en tiempo real, kernels de sistemas operativos y controladores de dispositivos, 
+            pero también se pueden usar para otras aplicaciones. 
+            Un compilador a veces producirá código ensamblador como un paso intermedio al traducir un programa de alto nivel en código de máquina.
+          </p>    
+        </section>
+        <div class="Intro-Metodo">
+            <section>
+                <h2>Historia</h2>
+              <p>
+                Los procesadores Intel 8086 y 8088 fueron los primeros de 16 bits en tener un conjunto de instrucciones conocido actualmente como x86. 
+                Fueron un paso evolutivo en comparación con la generación anterior de CPUs de 8 bits, como el 8080 y heredaron muchas características e instrucciones,
+                las cuales fueron extendidas para trabajar con 16 bits. Ambos CPUs contenían un bus de direcciones de 20 bits y un grupo de registros internos de 16 bits. 
+                El 8086 tenía un bus de datos externo de 16 bits y el 8088 uno de 8 bits.
+                El 8088 estaba previsto como una versión de bajo coste del 8086.
+                El lenguaje ensamblador del x86 también cubre las diferentes versiones de CPU que siguieron,
+                como el 80188 y 80186, 80286, 80386, 80486, Pentium, etc, de Intel, también como los CPU de AMD y Cyrix 
+                como los procesadores 5x86 y K6, y el NEC V20 de NEC. 
+                El término x86 aplica a cualquier CPU pueda correr el lenguaje ensamblador original 
+                (usualmente también correrá por lo menos algunas de las extensiones.)
+              </p>  
             </section>
-        </div> <!--.diagramas-->
-
         <div>
-            <h3>Diccionario de datos</h3>
-            <section class="servicio">
-                <img src="../image/Diccionario.png" alt="Diccionario de datos" class="dc1">
-            </section>
-        </div> <!--.Diccionario-->
-    </main> 
+        <div class="Intro-Metodo">
+                <section>
+                    <h3>Modos de Operación x86</h3>
+                    <p>
+                       El procesador soporta numerosos modos de operación para código x86, 
+                       en los cuales no todas las instrucciones están disponibles. 
+                       Un sub-repertorio de instrucciones de 16-bit está disponible en “modo real” 
+                       (disponible en todos los procesadores x86), “modo protegido 16-bit” 
+                       (disponible desde el Intel 80286), o en el “modo v86” (disponible desde el Intel 80386). 
+                       Por su parte, las instrucciones de 32-bits están disponibles para el “modo protegido 32-bit” y para el “modo heredado” 
+                       (disponible con las extensiones de 64 bits). El repertorio de instrucciones parte de ideas similares en cada modo, 
+                       pero da lugar a distintas formas de acceso a memoria y de este modo emplea estrategias de programación diferentes.
+                    </p>
+                    <p>Los modos en los que el código x86 puede ser ejecutado son:</p>
+                        <ul>
+                            <li>Modo real (16-bit)</li>
+                            <li>Modo protegido (16-bit y 32-bit)</li>
+                            <li>Modo 8086 virtual (16-bit)</li>
+                            <li>System Management Mode (16-bit)</li>
+                            <li>Modo largo (64-bit)</li>
+                         </ul>
+                 </section>
+        <div>
+        <div class="Intro-Metodo">
+                <section>
+                    <h3>Registros</h3>
+                        <p>
+                            Los procesadores x86 tienen una serie de registros disponibles para almacenar información. 
+                            Este conjunto de registros son conocidos como registros de propósito general o GPR (del inglés General Purpose Register).
+                        </p>
+                        <p>Además de los GPR, existen adicionalmente:</p>
+                        <ul>
+                            <li>Registros de segmento (CS, DS, ES, FS, GS, SS)</li>
+                            <li>Otros registros (IP, Registro de estado)</li>
+                            <li>Registros extra (MMX, 3DNow!, SSE, etc).</li>
+                        </ul>
+                        <p>El registro IP apunta a la posición del programa en la que el procesador está ejecutando el código. El registro no puede ser accedido por el programador directamente.</p>
+                        <p>Los registros del x86 pueden ser usados mediante la instrucción MOV. Por ejemplo:</p>
+                            <li>mov ax, 1234h</li>
+                            <li>mov bx, ax</li>              
+                 </section>
+        <div>
+        <div class="Intro-Metodo">
+                <section>
+                    <h3>Sintaxis</h3>
+                        <p>
+                            El lenguaje ensamblador x86 tiene 2 vertientes diferentes en cuanto a su sintaxis de programación: 
+                            sintaxis Intel, usada en sus inicios para la documentación de la plataforma x86, y sintaxis AT&T 
+                            .1 La sintaxis Intel es la dominante en la plataforma Windows, mientras que en Unix/Linux ambas 
+                            son utilizadas aunque GCC solo soportaba la sintaxis AT&T en sus primeras versiones.
+
+                         </p>
+                        <p>
+                            La mayoría de los ensambladores x86 utilizan la sintaxis de Intel, como MASM, TASM, NASM, FASM and YASM. GAS 
+                            ha soportado ambas sintaxis desde la versión 2.10 a través de la directiva “.intel_sintax”.  
+                        </p>
+                        <img
+                            src=""
+                            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+                            alt="Imagen"
+                            class="imagen-responsive"
+                            />                                    
+                 </section>
+        <div>
+        <div class="Intro-Metodo">
+                <section>
+                    <h3>Descarga</h3>
+                        <p>
+                            Ingresa al siguiente link para descargar el software emulador x86:
+                         </p>
+                         <a href="https://drive.google.com/drive/folders/1yCyN-966fASB3N_df_F2dxSE2wOlmUzJ?pli=1">Enlace</a>                                                     
+                 </section>
+      </div>
+      <div>
+        <div class="Intro-Metodo">
+            <section>
+                <h3>Abrir emu x86</h3>
+                <p>Haz clic para abrir Emu8086</p>
+                <a href="emux86://" target="_blank">Abrir Emu8086</a>                                                     
+             </section>
+  </div>
+      <!--.servicios-->
+    </main>
     <footer class="footer">
-        <p>Todos los derechos reservados. Predify RPG</p>
+      <p class="footer">Todos los derechos reservados. Predify RPG</p>
     </footer>
 
-     <!--========== SCROLL UP ==========-->
-     <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-line"></i>
-      </a>
-      <!--=============== MAIN JS ===============-->
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
     <script src="../js/script.js"></script>
-</body>
+  </body>
 </html>
